@@ -1,0 +1,45 @@
+/* Creamos nuestras variables */
+:root {
+  --rojo: #e50914;
+  --color-fondo: #141414;
+}
+
+body {
+  background-color: var(--color-fondo);
+  font-family: "Open Sans", sans-serif;
+}
+.logotipo {
+  font-family: "Bebas Neue", cursive;
+  color: var(--rojo);
+  font-size: 40px;
+  /* La propiedad font-weight de CSS especifica el peso o grueso de la letra. Algunos tipos de letra sólo están disponibles en normal y bold. */
+  font-weight: normal;
+}
+
+.contenedor {
+  width: 90%;
+  margin: auto;
+}
+header {
+  padding: 30px 0;
+}
+header .contenedor {
+  display: flex;
+  /* Distribuir items uniformemente
+El primer item al inicio, el último al final */
+  justify-content: space-between;
+  align-items: center;
+}
+
+header nav a{
+    color: #aaa;
+    /* text-decoration se usa para establecer el formato de texto a subrayado */
+    text-decoration: none;
+    margin-right: 20px;
+
+}
+header nav a:hover,
+header nav a.activo{
+    /* :hover ->  cuando el usuario interactúa con un elemento con un dispositivo señalador */
+    color: #FFF;
+}
